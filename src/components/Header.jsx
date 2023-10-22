@@ -11,10 +11,6 @@ export default function Header() {
        <span className='text-slate-700'>Venture</span>
     </h1>
     </Link>
-    <form className='bg-slate-100 p-3 rounded-lg flex items-center'> 
-        <input type="text" placeholder="Search..." className='bg-transparent'/>
-        <FaSearch className='text-slate-500'/>
-    </form>
     <ul className='flex gap-4'>
         <Link to='/'><li className='hidden sm:inline text-slate-700 hover:underline'>Home</li></Link>
         <Link to='/about'><li className='hidden sm:inline text-slate-700 hover:underline'>About</li></Link>
@@ -24,6 +20,10 @@ export default function Header() {
        
        <Link to='/signIn'> <li className=' text-slate-700 hover:underline'>Signin</li></Link>
     </ul>
+    <form className=' bg-slate-100 p-3 rounded-lg flex items-center'> 
+    <input type="text" placeholder="Search..." className=' bg-transparent focus:outline-none'/>
+        <FaSearch className='text-slate-500'/>
+    </form>
     </div>
     </header>
   )
